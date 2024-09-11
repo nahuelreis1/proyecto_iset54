@@ -1,1 +1,76 @@
 {% load static %}
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'img/logo_54.png' %}" alt="Logo" class="logo-img" width="50">
+                <span class="logo-text">
+                    <h1 class="d-inline">ISET 54</h1>
+                </span>
+            </a>
+
+            <!-- Navbar Toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Inicio -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    
+                    <!-- Carrera Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="carreraDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Carrera
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="carreraDropdown">
+                            <li><a class="dropdown-item" href="#">Descripción</a></li>
+                            <li><a class="dropdown-item" href="#">Estructura</a></li>
+                            <li><a class="dropdown-item" href="#">Materias</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Inscripción -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inscripción</a>
+                    </li>
+
+                    <!-- Académico Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="academicoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Académico
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="academicoDropdown">
+                            <li><a class="dropdown-item" href="#">Cronograma</a></li>
+                            <li><a class="dropdown-item" href="#">Calendario de Exámenes</a></li>
+                            <li><a class="dropdown-item" href="#">Recursos</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Recursos Institucionales Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="recursosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Recursos Institucionales
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="recursosDropdown">
+                            <li><a class="dropdown-item" href="#">Cursos</a></li>
+                            <li><a class="dropdown-item" href="#">Bolsa de Trabajo</a></li>
+                            <li><a class="dropdown-item" href="#">Cooperadora</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Encuéntranos -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Encuéntranos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
