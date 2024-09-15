@@ -1,5 +1,5 @@
 #body-prueba{
-    background-color: violet;
+    background-color: lightgrey;
     font-size: 16px;
 }
 
@@ -29,9 +29,62 @@
     text-align: justify;
 }
 
+
+/* @media sirve para modificar algunos parametros establecidos, en este caso indicamos que para pantallas hasta 576px el font-size de las card se reduce. */
+
 @media (max-width: 576px) {
     .card-text {
         font-size: 0.8rem;
     }
 }
 
+
+/* Estilos personalizados para el carrusel */
+
+.carousel-section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.carousel-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.carousel-description {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+
+/* estilos para section encuentranos*/
+
+#location h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.map-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
