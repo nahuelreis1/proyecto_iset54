@@ -90,7 +90,9 @@
             <div class="col-sm-12 col-md-6">
                 <h1 class="display-3 text-center">Instituto N54</h1>
                 <p class="text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ad perspiciatis quaerat architecto nemo minus similique est optio assumenda esse vel iure at?
+                    La Resolución nº 425, del Ministerio de Educación y Justicia de la Nación, del 4 de Abril de 1983, en su Artículo tercero, autorizaba a la Dirección Nacional de Educación del Adulto a efectuar el seguimiento y evaluación de los planes de estudios de las carreras del nivel terciario que funcionan en su jurisdicción.
+                    En tal sentido dicha dirección estudió los resultados de la experiencia que señalaron como necesarios la carrera Técnico Superior en Análisis de Balance y Créditos y Auditoría Bancaria creando por Resolución nº 799 del 15 de Mayo de 1987 la carrera y el plan de estudios para dicha terminalidad.
+                    La carrera fue creada en el ámbito nacional pero con la transferencia del sistema educativo a las provincias, pasó a depender directamente del Ministerio de Educación de la Provincia de Santa Fe, dentro del cual actualmente se encuentra.
                 </p>
                 <p class="text-center">
                 <a href="#" class="btn btn-primary btn-lg" role="button">Aprende mas</a>
@@ -99,22 +101,39 @@
         </div>
 
         <!-- ROW 3 -->
-        <div data-aos="fade-left" class="row align-items-center">
-            <div class="col-sm-12 col-md-3">
-                <form>
+        <div data-aos="fade-left" class="row text-center align-items-center">
+            <div class="col-sm-12 col-md-6">
+                <!-- Formulario de Django insertado dentro del formulario antiguo de Bootstrap -->
+                <form method="POST">
+                    {% csrf_token %}
+                    
+                    <!-- Campos del formulario de Django renderizados -->
                     <div class="mb-2">
-                        <label for="txtEmail" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="txtEmail" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        {{ form.name.label_tag }} <!-- Etiqueta del campo name -->
+                        {{ form.name }} <!-- Campo name -->
                     </div>
+                    
                     <div class="mb-2">
-                        <label for="txtComment" class="form-label">Comment</label>
-                        <textarea id="txtComment" class="form-control" rows="7"></textarea>
+                        {{ form.last_name.label_tag }} <!-- Etiqueta del campo last_name -->
+                        {{ form.last_name }} <!-- Campo last_name -->
                     </div>
+                    
+                    <div class="mb-2">
+                        {{ form.age.label_tag }} <!-- Etiqueta del campo age -->
+                        {{ form.age }} <!-- Campo age -->
+                    </div>
+        
+                    <div class="mb-2">
+                        {{ form.carrer.label_tag }} <!-- Etiqueta del campo carrer -->
+                        {{ form.carrer }} <!-- Campo carrer -->
+                    </div>
+        
+                    <!-- Botón de envío del formulario -->
+                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
                 </form>
             </div>
 
-            <div class="col-sm-12 col-md-9">
+            <div class="col-sm-12 col-md-6">
                 <img src="{% static 'img/bank-building.jpg'%}" class="img-fluid" alt="Bank Building">
             </div>
         </div>
@@ -139,7 +158,7 @@
                     </div>
                 </div>
             </div>
-        </section>        
+        </section>   
     </div>
 </main>
 
