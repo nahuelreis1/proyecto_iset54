@@ -3,6 +3,7 @@
     font-size: 16px;
 }
 
+
 .text-justify1 {
     text-align: justify;
     color: blue;
@@ -27,6 +28,11 @@
 
 .card-text {
     text-align: justify;
+}
+
+.card .card-body .icono-card {
+    width: 50px;
+    height: auto;
 }
 
 
@@ -88,3 +94,5 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+
