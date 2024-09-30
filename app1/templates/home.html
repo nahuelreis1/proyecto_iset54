@@ -3,4 +3,14 @@
 
 {% block content %} 
 
+{% if username %}
+    <div class="alert alert-success">
+        Bienvenido, {{ username }}!
+    </div>
+{% endif %}
+
 {% endblock %}
+
+
+
+
